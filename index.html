@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diren Tekir Doğa ve Hayvanları Koruma Derneği</title>
     <style>
+        /* Genel sayfa stili */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f9f9f9;
+            font-family: 'Arial', sans-serif;
+            background: #f0f2f5;
             color: #333;
         }
 
+        /* Header */
         header {
             background: #9faf72;
             color: white;
             padding: 15px 25px;
             font-size: 22px;
             font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
 
         .header-container {
@@ -47,54 +50,86 @@
             }
 
             .logo {
-                position: static; 
-                margin-bottom: 10px; 
+                position: static;
+                margin-bottom: 10px;
             }
 
             .header-title {
-                font-size: 18px; 
+                font-size: 18px;
             }
         }
 
+        /* Menü */
         nav {
             background: #ffffff;
-            padding: 10px 0;
+            padding: 12px 0;
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 25px;
             border-bottom: 1px solid #ddd;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
 
         nav a {
             text-decoration: none;
             color: #333;
             font-weight: bold;
+            transition: 0.3s;
         }
 
         nav a:hover {
             color: #4caf50;
         }
 
+        /* Section */
         section {
             padding: 40px 20px;
             max-width: 900px;
             margin: auto;
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
         h2 {
             color: #4caf50;
+            margin-top: 0;
         }
 
+        p {
+            line-height: 1.6;
+        }
+
+        /* Bağış butonları */
+        .donate-button {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 15px;
+            background: #4caf50;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .donate-button:hover {
+            background: #3b8a40;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        /* Footer */
         footer {
             background: #333;
             color: white;
-            padding: 15px;
+            padding: 20px;
             text-align: center;
             margin-top: 40px;
+            font-size: 14px;
         }
     </style>
 </head>
-
 <body>
 
 <header>
@@ -121,15 +156,14 @@
 
 <section id="bagis">
     <h2>Bağış</h2>
-    <p>Derneğimiz bağışlarla ayakta durmaktadır.  
-    Aşağıdaki IBAN üzerinden veya linktree üzerinden gönüllü bağış yaparak daha fazla cana yardımcı olabilirsiniz:</p>
+    <p>Derneğimiz bağışlarla ayakta durmaktadır. Aşağıdaki IBAN üzerinden veya Linktree üzerinden gönüllü bağış yapabilirsiniz:</p>
 
     <p><strong>İsim:</strong> DİREN TEKİR DOĞA VE HAYVANLARI KORUMA DERNEĞİ</p>
     <p><strong>Banka:</strong> İş Bankası</p>
     <p><strong>IBAN:</strong> TR40 0006 4000 0014 2171 8238 07</p>
     <p><strong>Açıklama:</strong> Lütfen açıklamaya bağış harici bir şey yazmayınız</p>
-    <p><strong>Aşağıdaki link üzerinden destek olmak istediğiniz miktarı seçerek İyzico aracı ödeme sitesi desteği ile banka kartı ve kredi kartlarınızla güvenle destek olabilirsiniz. Adres, iletişim gibi bilgileri eksik veya yanlış doldurmanızda bir sakınca yoktur, yalnızca İyzico bir alışveriş sitesi gibi çalışmaktadır.</strong></p>
-    <p><strong>Linktree:</strong> <a href="https://linktr.ee/direntekir?utm_source=linktree_profile_share&ltsid=465826bd-5b8b-42f2-b5f7-03b7c50d0b85">Tıklayınız</a></p>
+
+    <a href="https://linktr.ee/direntekir?utm_source=linktree_profile_share&ltsid=465826bd-5b8b-42f2-b5f7-03b7c50d0b85" class="donate-button">Bağış Yap</a>
 </section>
 
 <section id="iletisim">
