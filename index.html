@@ -6,30 +6,15 @@
     <title>Diren Tekir Doğa ve Hayvanları Koruma Derneği</title>
 
     <style>
-        /* GENEL SAYFA STİLLERİ */
+        /* Genel sayfa stili */
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
+            background: #f0f2f5;
             color: #333;
-            position: relative;
-            min-height: 100vh;
-            overflow-x: hidden;
         }
 
-        /* ARKA PLAN RESMİ VE OPACITY FİLTRESİ */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url("arka-plan.jpg") no-repeat center center/cover;
-            opacity: 0.35; /* ARKA PLAN ŞEFFAFLIĞI */
-            z-index: -1;
-        }
-
-        /* HEADER */
+        /* Header */
         header {
             background: #9faf72;
             color: white;
@@ -38,88 +23,77 @@
             font-weight: bold;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
-
         .header-container {
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
         }
-
         .logo {
             height: 50px;
             width: auto;
             position: absolute;
             left: 25px;
         }
-
         .header-title {
             text-align: center;
         }
 
-        /* MOBİL LOGO FIX */
+        /* Mobil uyumluluk */
         @media (max-width: 600px) {
             .header-container {
                 flex-direction: column;
                 justify-content: center;
                 text-align: center;
             }
-
             .logo {
                 position: static;
                 margin-bottom: 10px;
             }
-
             .header-title {
                 font-size: 18px;
             }
         }
 
-        /* MENÜ */
+        /* Menü */
         nav {
-            background: #ffffffc7;
+            background: #ffffff;
             padding: 12px 0;
             display: flex;
             justify-content: center;
             gap: 25px;
             border-bottom: 1px solid #ddd;
-            backdrop-filter: blur(5px);
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
-
         nav a {
             text-decoration: none;
             color: #333;
             font-weight: bold;
             transition: 0.3s;
         }
-
         nav a:hover {
             color: #4caf50;
         }
 
-        /* BEYAZ KUTULAR */
+        /* Section */
         section {
             padding: 40px 20px;
             max-width: 900px;
             margin: auto;
-            background: #ffffffdd;
+            background: white;
             border-radius: 12px;
             margin-bottom: 30px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-            backdrop-filter: blur(3px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-
         h2 {
             color: #4caf50;
             margin-top: 0;
         }
-
         p {
             line-height: 1.6;
         }
 
-        /* BAĞIŞ BUTONU */
+        /* Bağış butonları */
         .donate-button {
             display: inline-block;
             padding: 12px 25px;
@@ -131,20 +105,19 @@
             font-weight: bold;
             transition: 0.3s;
         }
-
         .donate-button:hover {
             background: #3b8a40;
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
 
-        /* FOOTER */
+        /* Footer */
         footer {
             background: #333;
             color: white;
             padding: 20px;
             text-align: center;
-            font-size: 14px;
             margin-top: 40px;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -175,38 +148,25 @@
 
 <section id="bagis">
     <h2>Bağış</h2>
+
     <p><strong>Derneğimiz bağışlarla ayakta durmaktadır. Aşağıdaki IBAN üzerinden veya Linktree üzerinden gönüllü bağış yapabilirsiniz:</strong></p>
 
-    <!-- IBAN BAŞLIK -->
-    <h3 style="
-        background: #e0e0e0;
-        color: #333;
-        display: inline-block;
-        padding: 6px 12px;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-        font-size: 14px;
-    ">💚 IBAN ile Bağış Yap 💚</h3>
+    <h3 style="background: #e0e0e0; color: #333; display: inline-block; padding: 6px 12px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.15); font-size: 14px; margin-bottom: 15px;">
+        💚 IBAN ile Bağış Yap 💚
+    </h3>
 
     <p><strong>İsim:</strong> DİREN TEKİR DOĞA VE HAYVANLARI KORUMA DERNEĞİ</p>
     <p><strong>Banka:</strong> İş Bankası</p>
     <p><strong>IBAN:</strong> TR40 0006 4000 0014 2171 8238 07</p>
     <p><strong>Açıklama:</strong> Lütfen açıklamaya bağış harici bir şey yazmayınız</p>
 
-    <!-- KREDİ KARTI BAŞLIK -->
-    <h3 style="
-        background: #e0e0e0;
-        color: #333;
-        display: inline-block;
-        padding: 6px 12px;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-        font-size: 14px;
-    ">💚 Kredi Kartı ile Bağış Yap 💚</h3>
+    <h3 style="background: #e0e0e0; color: #333; display: inline-block; padding: 6px 12px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.15); font-size: 14px; margin-bottom: 15px;">
+        💚 Kredi Kartı ile Bağış Yap 💚
+    </h3>
 
-    <p><strong>Aşağıdaki link üzerinden destek olmak istediğiniz miktarı seçerek İyzico ödeme sistemi ile güvenle bağış yapabilirsiniz.</strong></p>
+    <p><strong>Aşağıdaki link üzerinden destek olmak istediğiniz miktarı seçerek İyzico aracı ödeme sitesi desteği ile banka kartı ve kredi kartlarınızla güvenle destek olabilirsiniz. Adres, iletişim gibi bilgileri eksik veya yanlış doldurmanızda bir sakınca yoktur, yalnızca İyzico bir alışveriş sitesi gibi çalışmaktadır.</strong></p>
 
-    <a href="https://linktr.ee/direntekir" class="donate-button">Kredi Kartı ile Bağış Yap</a>
+    <a href="https://linktr.ee/direntekir?utm_source=linktree_profile_share&ltsid=465826bd-5b8b-42f2-b5f7-03b7c50d0b85" class="donate-button">Kredi Kartı ile Bağış Yap</a>
 </section>
 
 <section id="iletisim">
