@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="tr">
-<!DOCTYPE html>
-<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,6 +36,24 @@
 
         .header-title {
             text-align: center;
+        }
+
+        /* Mobil uyumluluk */
+        @media (max-width: 600px) {
+            .header-container {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .logo {
+                position: static; 
+                margin-bottom: 10px; 
+            }
+
+            .header-title {
+                font-size: 18px; 
+            }
         }
 
         nav {
@@ -112,8 +128,7 @@
     <p><strong>Banka:</strong> İş Bankası</p>
     <p><strong>IBAN:</strong> TR40 0006 4000 0014 2171 8238 07</p>
     <p><strong>Açıklama:</strong> Lütfen açıklamaya bağış harici bir şey yazmayınız</p>
-
-    <p><strong>Aşağıdaki link üzerinden destek olmak istediğiniz miktarı seçerek İyzico aracı ödeme sitesi desteği ile banka kartı ve kredi kartlarınızla güvenle destek olabilirsiniz. Adres, iletişim gibi bilgileri eksik veya yanlış doldurmanızda bir sakınca yoktur, yalnızca İyzico bir alışveriş sitesi gibi çalıştığından gerekmektedir.”</strong></p>
+    <p><strong>Aşağıdaki link üzerinden destek olmak istediğiniz miktarı seçerek İyzico aracı ödeme sitesi desteği ile banka kartı ve kredi kartlarınızla güvenle destek olabilirsiniz. Adres, iletişim gibi bilgileri eksik veya yanlış doldurmanızda bir sakınca yoktur, yalnızca İyzico bir alışveriş sitesi gibi çalışmaktadır.</strong></p>
     <p><strong>Linktree:</strong> <a href="https://linktr.ee/direntekir?utm_source=linktree_profile_share&ltsid=465826bd-5b8b-42f2-b5f7-03b7c50d0b85">Tıklayınız</a></p>
 </section>
 
