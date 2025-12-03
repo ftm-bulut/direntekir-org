@@ -13,12 +13,23 @@
         }
 
         header {
-            background: #44965f;
+            background: #44965f; /* Yumuşak yeşil ton */
             color: white;
             padding: 15px 25px;
-            text-align: center;
             font-size: 22px;
             font-weight: bold;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            gap: 15px; /* Logo ile başlık arası boşluk */
+            justify-content: flex-start; /* Logo ve başlık sol hizalanır */
+        }
+
+        .logo {
+            height: 50px; /* Logo yüksekliği */
+            width: auto;
         }
 
         nav {
@@ -62,7 +73,12 @@
 
 <body>
 
-<header>Diren Tekir Doğa ve Hayvanları Koruma Derneği</header>
+<header>
+    <div class="header-container">
+        <img src="logo.png" alt="Diren Tekir Logo" class="logo">
+        <span>Diren Tekir Doğa ve Hayvanları Koruma Derneği</span>
+    </div>
+</header>
 
 <nav>
     <a href="#hakkimizda">Hakkımızda</a>
@@ -72,26 +88,19 @@
 
 <section id="hakkimizda">
     <h2>Hakkımızda</h2>
-    
-        <p>Diren Tekir Doğa ve Hayvanları Koruma Derneği’miz açıldı!🌱🐾</p>
-
-        <p>Peki biz kimiz?</p>
-        <p>Ankara’da 7 yılı aşkın bir süredir bireysel olarak besleme, tedavi, yuvalandırma ve en önemlisi kısırlaştırma yapan, yüzlerce kedinin olduğu bölgelerle ilgilenen birkaç insan.</p>
-        <p>Artan masraflar ve borçlar bireysel olarak belimizi iyice büktüğünden uzun süredir kurmayı düşündüğümüz derneğimizi sonunda hayata geçirebildik.</p>
-        <p>Bugüne kadar yüzlerce kedi ve köpekle ilgilendik, kısırlaştırdık, yuvalandırdık. 🐈🐈🐕</p>
-
-        <p>Hayvan hakları mücadelesinde daha güçlü bir ses olabilmek adına artık dernek olarak ilerleyeceğiz.</p>
-        <p>“yaşadım diyebilmen için…”</p>
-      
-    
+    <p>Diren Tekir Doğa ve Hayvanları Koruma Derneği’miz açıldı!🌱🐾</p>
+    <p>Peki biz kimiz?</p>
+    <p>Ankara’da 7 yılı aşkın bir süredir bireysel olarak besleme, tedavi, yuvalandırma ve en önemlisi kısırlaştırma yapan, yüzlerce kedinin olduğu bölgelerle ilgilenen birkaç insan.</p>
+    <p>Artan masraflar ve borçlar bireysel olarak belimizi iyice büktüğünden uzun süredir kurmayı düşündüğümüz derneğimizi sonunda hayata geçirebildik.</p>
+    <p>Bugüne kadar yüzlerce kedi ve köpekle ilgilendik, kısırlaştırdık, yuvalandırdık. 🐈🐈🐕</p>
+    <p>Hayvan hakları mücadelesinde daha güçlü bir ses olabilmek adına artık dernek olarak ilerleyeceğiz.</p>
+    <p>“yaşadım diyebilmen için…”</p>
 </section>
 
 <section id="bagis">
     <h2>Bağış</h2>
-    <p>
-        Derneğimiz bağışlarla ayakta durmaktadır.  
-        Aşağıdaki IBAN üzerinden veya linktree üzerinden gönüllü bağış yaparak daha fazla cana yardımcı olabilirsiniz:
-    </p>
+    <p>Derneğimiz bağışlarla ayakta durmaktadır.  
+    Aşağıdaki IBAN üzerinden veya linktree üzerinden gönüllü bağış yaparak daha fazla cana yardımcı olabilirsiniz:</p>
 
     <p><strong>IBAN:</strong> TR40 0006 4000 0014 2171 8238 07</p>
     <p><strong>İsim:</strong> DİREN TEKİR DOĞA VE HAYVANLARI KORUMA DERNEĞİ</p>
@@ -110,4 +119,6 @@
 </footer>
 
 </body>
+</html>
+
 </html>
