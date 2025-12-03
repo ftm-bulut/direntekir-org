@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="tr">
+<!DOCTYPE html>
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,13 +25,19 @@
         .header-container {
             display: flex;
             align-items: center;
-            gap: 15px; /* Logo ile başlık arası boşluk */
-            justify-content: flex-start; /* Logo ve başlık sol hizalanır */
+            justify-content: center; /* başlığı ortaya alır */
+            position: relative;      /* logo için referans */
         }
 
         .logo {
-            height: 50px; /* Logo yüksekliği */
+            height: 50px;
             width: auto;
+            position: absolute; /* logo hep solda sabit kalır */
+            left: 25px;
+        }
+
+        .header-title {
+            text-align: center; /* başlık ortaya gelir */
         }
 
         nav {
@@ -76,7 +84,7 @@
 <header>
     <div class="header-container">
         <img src="logo.png" alt="Diren Tekir Logo" class="logo">
-        <span>Diren Tekir Doğa ve Hayvanları Koruma Derneği</span>
+        <span class="header-title">Diren Tekir Doğa ve Hayvanları Koruma Derneği</span>
     </div>
 </header>
 
@@ -119,6 +127,4 @@
 </footer>
 
 </body>
-</html>
-
 </html>
